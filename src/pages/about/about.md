@@ -1,10 +1,10 @@
 ---
 title: about
-name: "Cezar Kelso"
-designation: "Senior Detective"
-location: Los Angeles, CA 90001
+name: "Luis Hernandez"
+designation: "Computer Engineer"
+location: Zapopan, Jalisco. Mexico
 pronouns: "he/him/el"
 website: "http://tafutza.hn/kos"
 ---
 
-Highly skilled and experienced law enforcement professional with over two decades of service in various specialized units. Adept at conducting complex investigations, coordinating tactical operations, and providing leadership in high-pressure situations. Known for exceptional problem-solving abilities, strategic thinking, and dedication to upholding the law. Seeking opportunities to leverage expertise in a challenging environment where I can continue to make a meaningful impact.
+As a developer, I thrive on crafting innovative applications, websites, and video games that not only entertain but also enrich users' experiences. My enthusiasm extends beyond coding; I relish collaborative environments where I can both contribute my expertise and learn from others. I am driven by a perpetual hunger for knowledge, constantly seeking to broaden my skill set and tackle real-world challenges. Whether it's creating solutions to everyday problems or diving into the latest technologies, I am committed to leveraging my programming skills to make a positive impact.
