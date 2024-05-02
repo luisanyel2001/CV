@@ -70,7 +70,7 @@ const PDF = "/CV_2024_English.pdf";
     {
       projects.map((item) => {
         return (
-          <Card
+          <ModalCard
             title={item.frontmatter.title}
             timeframe={item.frontmatter.date}
             description={item.compiledContent()}
@@ -124,23 +124,6 @@ const PDF = "/CV_2024_English.pdf";
     </div>
   </AccordionLayout>
 
-  <!-- 
-  <AccordionLayout title={"Contact"} icon={"carbon:location-person"}>
-    <div class="flex flex-wrap content-around gap-4 justify-center">
-      {
-        contact.map((item) => {
-          return (
-            <ContactCard
-              url={item.frontmatter.url}
-              url_name={item.frontmatter.title}
-              icon={item.frontmatter.icon}
-            />
-          );
-        })
-      }
-    </div>
-  </AccordionLayout>
-  -->
   <StaticLayout title={"Contact"} icon={"carbon:location-person"}>
     <div class="flex flex-wrap content-around gap-4 justify-center">
       {
