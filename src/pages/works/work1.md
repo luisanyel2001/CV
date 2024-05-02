@@ -1,14 +1,13 @@
 ---
-title: Senior Detective
-date: 1990 - Present
-url: http://ropibbe.nf/savadru
-location: Los Angeles, California
-org: Los Angeles Police Department (LAPD)
-tags: ["Law Enforcement", "Police Work", "Tactical Operations", "Case Management"]
+title: Intership- System Assitant
+date: 03/2023 - 09/2023
+url: https://www.fil.com.mx/
+location: Guadalajara, Jalisco
+org: Feria Internacional del Libro de Guadalajara (FIL)
+tags: ["Automation", "Maintenance", "Networking", "Logistics"]
 ---
 
-- Lead investigations into organized crime, drug trafficking, and high-profile criminal activities.
-- Conducted extensive surveillance operations utilizing advanced equipment and techniques to gather critical intelligence.
-- Collaborated with federal agencies such as the FBI and DEA on joint task forces to dismantle criminal syndicates.
-- Played a pivotal role in numerous undercover operations, successfully infiltrating criminal organizations and gathering actionable evidence for prosecution.
-- Trained and mentored junior officers in surveillance tactics, undercover operations, and tactical maneuvers.
+- Developed and implemented software programs for task automation, resulting in a significant improvement in team operational efficiency.
+- Conducted preventive and corrective maintenance on computer equipment, ensuring optimal functionality.
+- Configured and managed the network infrastructure for the Fair.
+- Assisted in the IT logistics for events at the International Book Fair, ensuring availability and functionality of computer systems throughout the event.

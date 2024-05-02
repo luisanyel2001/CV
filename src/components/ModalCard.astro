@@ -1,0 +1,46 @@
+---
+import { Icon } from "astro-icon/components";
+const { timeframe, title, description, url, tags, url_name, location } =
+  Astro.props;
+---
+
+  <div
+    class="card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
+  >
+    <figure>
+      <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">{title}</h2>
+      <p>{description}</p>
+      
+      {Array.isArray(tags) && (
+        <div class="flex flex-wrap content-around gap-2 my-4">
+          {tags.map((item) => (
+            <span class="badge text-center inline-block align-middle w-max h-max text-sm  badge-outline shadow-md mb-1" :key={item}>{item}</span>
+          ))}
+        </div>
+      )}
+
+      <div class="card-actions justify-end">
+          <button class="btn btn-outline" onclick="my_modal_content.showModal()">
+            <p>Read more</p>
+            <Icon name="carbon:overflow-menu-horizontal" class="w-6 h-6 ml-1" />
+          </button>
+      </div>
+
+      <dialog id="my_modal_content" class="modal">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">Hello!</h3>
+          <p class="py-4">Press ESC key or click the button below to close</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+    </div>
+  </div>

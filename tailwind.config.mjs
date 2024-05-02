@@ -5,14 +5,14 @@ export default {
 	daisyui: {
 		themes: [
 			{
-				lofi: {
-					...require("daisyui/src/theming/themes")["lofi"],
+				corporate: {
+					...require("daisyui/src/theming/themes")["corporate"],
 					"--rounded-box": "1rem",
 					"--rounded-btn": "0.5rem",
 					"--rounded-badge": "1.9rem"
 				},
-				black: {
-					...require("daisyui/src/theming/themes")["black"],
+				business: {
+					...require("daisyui/src/theming/themes")["business"],
 					"--rounded-box": "1rem",
 					"--rounded-btn": "0.5rem",
 					"--rounded-badge": "1.9rem",

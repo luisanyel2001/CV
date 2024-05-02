@@ -1,24 +1,35 @@
 ---
 import { Icon } from "astro-icon/components";
 import AccordionLayout from "../layouts/AccordionLayout.astro";
+import StaticLayout from "../layouts/StaticLayout.astro";
 import * as about from "../pages/about/about.md";
 import Card from "./Card.astro";
 import ContactCard from "./ContactCard.astro";
+import ModalCard from "./ModalCard.astro";
 const works = await Astro.glob("../pages/works/*.md");
 const projects = await Astro.glob("../pages/projects/*.md");
 const studies = await Astro.glob("../pages/studies/*.md");
 const certificates = await Astro.glob("../pages/certificates/*.md");
 const blogs = await Astro.glob("../pages/blogs/*.md");
 const contact = await Astro.glob("../pages/contact/*.md");
-const PDF = "/cv-20240219.pdf";
+const PDF = "/CV_2024_English.pdf";
 ---
 
 <div class="join join-vertical gap-1">
+  <!-- 
+  <StaticLayout title={"About"} icon={"carbon:identification"}>
+    <article class="text-justify">
+      <Fragment set:html={about.compiledContent()} />
+    </article>
+  </StaticLayout>
+  -->
   <AccordionLayout title={"About"} icon={"carbon:identification"}>
     <article class="text-justify">
       <Fragment set:html={about.compiledContent()} />
     </article>
   </AccordionLayout>
+  
+  
 
   <AccordionLayout title={"Work"} icon={"carbon:construction"}>
     {
@@ -89,22 +100,6 @@ const PDF = "/cv-20240219.pdf";
     }
   </AccordionLayout>
 
-  <AccordionLayout title={"Blogs"} icon={"carbon:pen"}>
-    {
-      blogs.map((item) => {
-        return (
-          <Card
-            title={item.frontmatter.title}
-            timeframe={item.frontmatter.date}
-            description={item.compiledContent()}
-            url={item.frontmatter.url}
-            url_name={item.frontmatter.url_name}
-          />
-        );
-      })
-    }
-  </AccordionLayout>
-
   <AccordionLayout title={"Files"} icon={"carbon:volume-file-storage"}>
     <div class="flex justify-center w-full">
       <div
@@ -129,6 +124,7 @@ const PDF = "/cv-20240219.pdf";
     </div>
   </AccordionLayout>
 
+  <!-- 
   <AccordionLayout title={"Contact"} icon={"carbon:location-person"}>
     <div class="flex flex-wrap content-around gap-4 justify-center">
       {
@@ -144,4 +140,22 @@ const PDF = "/cv-20240219.pdf";
       }
     </div>
   </AccordionLayout>
+  -->
+  <StaticLayout title={"Contact"} icon={"carbon:location-person"}>
+    <div class="flex flex-wrap content-around gap-4 justify-center">
+      {
+        contact.map((item) => {
+          return (
+            <ContactCard
+              url={item.frontmatter.url}
+              url_name={item.frontmatter.title}
+              icon={item.frontmatter.icon}
+            />
+          );
+        })
+      }
+    
+    </div>
+  </StaticLayout>
+
 </div>

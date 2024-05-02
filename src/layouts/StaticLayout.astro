@@ -1,0 +1,20 @@
+---
+import { Icon } from "astro-icon/components";
+import BaseLayout from "./BaseLayout.astro";
+const { title, icon } = Astro.props;
+---
+
+<BaseLayout>
+  <div class="font-extrabold tracking-tight md:text-2xl pb-4">
+    <div class="flex justify-center">
+      <Icon name={icon} class="w-8 h-8 mr-4" />
+      {title}
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 justify-center">
+    <slot />
+  </div>
+
+  
+</BaseLayout>

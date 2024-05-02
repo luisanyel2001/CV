@@ -1,8 +1,8 @@
 ---
-title: Advanced SWAT Tactics and Leadership Training
-location: FBI Academy
-url: http://ni.sb/mehanad
-institute: FBI Academy
-date: 1975-1980
-tags: ["Conflict Resolution", "Strategic Planning", "Risk Assessment", "Firearms Training", "Emergency Response"]
+title: Associate of IT 
+location: Escuela Politécnica Ing. Jorge Matute Remus
+url: http://politecnicamatute.sems.udg.mx/
+institute: Politécnica Ing. Jorge Matute Remus
+date: 2016-2020
+tags: ["Information Technology", "Web Development", "Databases", "Hardware", "Marketing", "Documentation"]
 ---

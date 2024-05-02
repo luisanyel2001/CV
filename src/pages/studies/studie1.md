@@ -1,15 +1,16 @@
 ---
-title: Bachelor of Science in Criminal Justice
-location: University of California, Los Angeles (UCLA)
-url: http://foeberoz.gm/kuj
-institute: University of California
-date: 1970-1975
+title: Bachelor of Computer Engineering 
+location: Centro Universitario de Ciencias Exactas e ingeniería (CUCEI)
+url: http://www.cucei.udg.mx
+institute: CUCEI
+date: 2020-2024
 tags:
   [
-    "Criminal Justice",
-    "Law Enforcement",
-    "Legal Studies",
-    "Public Safety",
-    "Court System",
+    "Data Structures",
+    "Algorithms",
+    "Artificial Intelligence",
+    "Operating Systems",
+    "Database Systems",
+    "Computer Architecture",
   ]
 ---

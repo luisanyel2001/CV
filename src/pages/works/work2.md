@@ -1,22 +1,20 @@
 ---
-title: Tactical Team Leader
-date: 1985 - 1990
-url: http://atawajof.dz/vonilzor
-location: Los Angeles, California
-org: Los Angeles County Sheriff's Department – SWAT Division
+title: Internship – Web Developer 
+date: 01/2020 - 06/2020
+url: http://politecnicamatute.sems.udg.mx/
+location: Zapopan, Jalisco
+org: Escuela Politécnica Ing. Jorge Matute Remus
 tags:
   [
-    "SWAT",
-    "Surveillance",
-    "Undercover Operations",
-    "Evidence Gathering",
-    "Case Solving",
-    "Interviewing Skills",
+    "Development",
+    "Flask",
+    "Databases",
+    "Front-end",
+    "Back-end",
+    "Lead"
   ]
 ---
 
-- Led SWAT operations in high-risk situations, including hostage rescues, armed standoffs, and counter-terrorism missions.
-- Developed and implemented tactical plans tailored to specific scenarios, ensuring the safety of hostages, civilians, and law enforcement personnel.
-- Conducted specialized training for SWAT team members in firearms proficiency, close-quarters combat, tactical movement, and hostage negotiation.
-- Coordinated with local, state, and federal agencies to support joint operations and enhance interagency cooperation.
-- Provided expertise and assistance in the planning and execution of high-profile security details for visiting dignitaries, VIPs, and major events.
+- Spearheaded the development of a web platform to streamline student-company connections for professional internships, significantly enhancing access to job opportunities.
+- Utilized Flask, a Python framework, for back-end programming implementation, employing agile methodologies to ensure optimal performance and seamless user experience.
+- Designed the front-end user interface with a user-centric approach, employing HTML, CSS, and JavaScript to create visually appealing and user-friendly experiences.
