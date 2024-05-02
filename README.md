@@ -79,9 +79,8 @@ All commands are run from the root of the project, from a terminal:
 
 ## Demo
 
-[astro-cv-esquelete](https://astro-cv-esquelete.vercel.app/ "astro-cv-esquelete")
+[CV](https://cvluishernandez-gfog65hr8-luis-projects-1f0a1c9c.vercel.app/)
 
- ![alt text](https://github.com/mmouzo/astro-cv-esquelete/blob/main/public/snap_project.webp?raw=true)
 
 ## Acknowledgments
 
