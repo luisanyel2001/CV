@@ -36,12 +36,22 @@ const { title, short_description, tags, url_img, complete_description, prefix, d
       }
 
 
-        <dialog id={"my_modal_"+prefix} class="modal">
+        <dialog id={"my_modal_"+prefix} class="modal justify-center">
           <div class="modal-box max-w-4xl">
             <form method="dialog">
               <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
             </form>
             <h3 class="font-bold text-lg">{title}</h3>
+            {(demo !== null) &&
+              <div class="card-actions justify-start py-2">
+                <a href={demo} target="_blank">
+                  <button class="btn btn-outline" >
+                    Bagde
+                    <Icon name="carbon:badge" class="w-6 h-6 ml-1" />
+                  </button>
+                </a>
+              </div>
+            }
             <img class="py-4" src={url_img} alt="">
           </div>
         </dialog>

@@ -10,6 +10,6 @@ img_2: /projects/rtc_2.png
 img_3: /projects/rtc_3.png
 img_4: /projects/rtc_4.png
 ---
-- Implemente un plugin para permitir la colaboracion en tiempo real de desarrolladores.
-- Cuenta con un algoritmo para calcular la eficiencia en la toma de decisiones.
-- Se puede ejecutar en realidad virtual y escritorio.
+- I implemented a plugin to enable real-time collaboration among developers.
+- It features an algorithm for assessing decision-making efficiency.
+- It can run on both virtual reality and desktop environments.
