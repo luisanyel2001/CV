@@ -6,7 +6,7 @@ const { title, icon } = Astro.props;
 
 <BaseLayout>
   <div class="collapse collapse-arrow ease-in-out duration-700">
-    <input aria-label={title} type="radio" name="my-accordion-2"/> <!--checkbox type for able many opens -->
+    <input id={title+"_ref"} aria-label={title} type="radio" name="my-accordion-2"/> <!--checkbox type for able many opens -->
     <div class="collapse-title font-extrabold tracking-tight md:text-2xl">
       <div class="flex">
         <Icon name={icon} class="w-8 h-8 mr-4" />

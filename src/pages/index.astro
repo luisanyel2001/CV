@@ -5,6 +5,8 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { Icon } from "astro-icon/components";
 
+
+
 ---
 
 <!--To update https://digital-expanse.com/tutorials/astro-blog-filters/ -->
@@ -15,6 +17,18 @@ import { Icon } from "astro-icon/components";
       /*Theme init*/
       localStorage.setItem("theme","business")
     </script>
+
+    <script>
+      /*open accordion section through routes*/
+      window.addEventListener('load', function() {
+        const currentHash = window.location.hash;
+        const refElement = document.getElementById(currentHash.split('#')[1]);
+        if (refElement) {
+          refElement.click();
+        }
+      });
+    </script>
+
     <script>
       import { themeChange } from "theme-change";
       themeChange();
