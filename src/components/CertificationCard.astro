@@ -1,0 +1,52 @@
+---
+import { Icon } from "astro-icon/components";
+const { title, short_description, tags, url_img, complete_description, prefix, demo, img_1, img_2, img_3, img_4 } =
+  Astro.props;
+
+---
+
+  <div
+    class="h-[58vh] card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
+  >
+    <figure onclick={"my_modal_"+prefix+".showModal()"}>
+      <img id="img_zoom" class="hover:scale-125 transition-all duration-500 cursor-pointer" src={url_img} alt="Shoes" />
+    </figure>
+    
+    <div class="card-body">
+      <h2 class="card-title">{title}</h2>
+      <p>{short_description}</p>
+      
+      {Array.isArray(tags) && (
+        <div class="flex flex-wrap content-around gap-2 my-4">
+          {tags.map((item) => (
+            <span class="badge text-center inline-block align-middle w-max h-max text-sm  badge-outline shadow-md mb-1" :key={item}>{item}</span>
+          ))}
+        </div>
+      )}
+
+      {(demo !== null) &&
+              <div class="card-actions justify-end">
+                <a href={demo} target="_blank">
+                  <button class="btn btn-outline" >
+                    Bagde
+                    <Icon name="carbon:badge" class="w-6 h-6 ml-1" />
+                  </button>
+                </a>
+              </div>
+      }
+
+
+        <dialog id={"my_modal_"+prefix} class="modal">
+          <div class="modal-box max-w-4xl">
+            <form method="dialog">
+              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <h3 class="font-bold text-lg">{title}</h3>
+            <img class="py-4" src={url_img} alt="">
+          </div>
+        </dialog>
+ 
+      
+
+    </div>
+  </div>

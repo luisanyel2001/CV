@@ -1,19 +1,21 @@
 ---
 import { Icon } from "astro-icon/components";
-const { timeframe, title, description, url, tags, url_name, location } =
+const { title, short_description, tags, url_img, complete_description, prefix, demo, img_1, img_2, img_3, img_4 } =
   Astro.props;
+
+
 ---
 
   <div
-    class="card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
+    class="h-[58vh] card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
   >
     <figure>
-      <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+      <img src={url_img} alt="Shoes" />
     </figure>
     
     <div class="card-body">
       <h2 class="card-title">{title}</h2>
-      <p>{description}</p>
+      <p>{short_description}</p>
       
       {Array.isArray(tags) && (
         <div class="flex flex-wrap content-around gap-2 my-4">
@@ -24,16 +26,66 @@ const { timeframe, title, description, url, tags, url_name, location } =
       )}
 
       <div class="card-actions justify-end">
-          <button class="btn btn-outline" onclick="my_modal_content.showModal()">
+          <button class="btn btn-outline" onclick={'my_modal_'+prefix+'.showModal()'}>
             <p>Read more</p>
             <Icon name="carbon:overflow-menu-horizontal" class="w-6 h-6 ml-1" />
           </button>
       </div>
+ 
+      <dialog id={'my_modal_'+prefix} class="modal">
+        <div class="modal-box max-w-5xl">
+          <div class="max-w-2xl mx-auto">
 
-      <dialog id="my_modal_content" class="modal">
-        <div class="modal-box">
-          <h3 class="font-bold text-lg">Hello!</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
+            <h3 class="font-bold text-lg py-4">{title}</h3>
+
+            <div class="carousel w-full max-h-[50vh]">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src={img_1} class="w-full"/>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src={img_2} class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide3" class="carousel-item relative w-full">
+                <img src={img_3} class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a> 
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide4" class="carousel-item relative w-full">
+                <img src={img_4} class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle">❮</a> 
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+            </div>
+
+            <article class="py-4 text-wrap prose text-secondary">
+              <p><Fragment set:html={complete_description}></Fragment></p>
+            </article>
+
+            {(demo !== null) &&
+              <div class="card-actions justify-end">
+                <a href={demo} target="_blank">
+                  <button class="btn btn-outline" >
+                    Demo
+                    <Icon name="carbon:demo" class="w-6 h-6 ml-1" />
+                  </button>
+                </a>
+              </div>
+            }
+          </div>
+      
+          
           <div class="modal-action">
             <form method="dialog">
               <!-- if there is a button in form, it will close the modal -->

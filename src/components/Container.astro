@@ -6,23 +6,30 @@ import * as about from "../pages/about/about.md";
 import Card from "./Card.astro";
 import ContactCard from "./ContactCard.astro";
 import ModalCard from "./ModalCard.astro";
+import CertificationCard from "./CertificationCard.astro";
 const works = await Astro.glob("../pages/works/*.md");
 const projects = await Astro.glob("../pages/projects/*.md");
 const studies = await Astro.glob("../pages/studies/*.md");
 const certificates = await Astro.glob("../pages/certificates/*.md");
-const blogs = await Astro.glob("../pages/blogs/*.md");
 const contact = await Astro.glob("../pages/contact/*.md");
 const PDF = "/CV_2024_English.pdf";
+
 ---
 
 <div class="join join-vertical gap-1">
+
+
   <!-- 
   <StaticLayout title={"About"} icon={"carbon:identification"}>
     <article class="text-justify">
       <Fragment set:html={about.compiledContent()} />
     </article>
   </StaticLayout>
+
+  <CertificationCard></CertificationCard>
   -->
+  
+
   <AccordionLayout title={"About"} icon={"carbon:identification"}>
     <article class="text-justify">
       <Fragment set:html={about.compiledContent()} />
@@ -67,61 +74,51 @@ const PDF = "/CV_2024_English.pdf";
   </AccordionLayout>
 
   <AccordionLayout title={"Projects"} icon={"carbon:tools"}>
+    <div class="grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center">
     {
       projects.map((item) => {
         return (
+          <div class="py-1">
           <ModalCard
             title={item.frontmatter.title}
-            timeframe={item.frontmatter.date}
-            description={item.compiledContent()}
+            short_description={item.frontmatter.short_description}
+            complete_description={item.compiledContent()}
             tags={item.frontmatter.tags}
-            url={item.frontmatter.url}
-            url_name={"View project"}
+            url_img={item.frontmatter.url_img}
+            prefix={item.frontmatter.prefix}
+            demo={item.frontmatter.demo}
+            img_1={item.frontmatter.img_1}
+            img_2={item.frontmatter.img_2}
+            img_3={item.frontmatter.img_3}
+            img_4={item.frontmatter.img_4}
           />
+          </div>
         );
       })
     }
+    </div>
   </AccordionLayout>
 
   <AccordionLayout title={"Certifications"} icon={"carbon:certificate"}>
-    {
-      certificates.map((item) => {
-        return (
-          <Card
-            title={item.frontmatter.title}
-            timeframe={item.frontmatter.date}
-            description={item.compiledContent()}
-            tags={item.frontmatter.tags}
-            url={item.frontmatter.url}
-            url_name={"View Certificate"}
-          />
-        );
-      })
-    }
-  </AccordionLayout>
-
-  <AccordionLayout title={"Files"} icon={"carbon:volume-file-storage"}>
-    <div class="flex justify-center w-full">
-      <div
-        class="card card-compact card-bordered border-[oklch(var(--s))] w-96 md:w-112 lg:w-128 hover:shadow-lg transition-all"
-      >
-        <figure>
-          <object data={PDF} type="application/pdf" width="100%"></object>
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Resume</h2>
-          <p>View and download my resume by clicking on the button below</p>
-          <div class="card-actions justify-end">
-            <a target="_blank" href={PDF}>
-              <button class="btn btn-outline">
-                <p>Download resume</p>
-                <Icon name="carbon:document-pdf" class="w-6 h-6 ml-1" />
-              </button>
-            </a>
-          </div>
-        </div>
+    <div class="grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center">
+      {
+        certificates.map((item) => {
+          return (
+            <div class="py-1">
+            <CertificationCard
+              title={item.frontmatter.title}
+              short_description={item.frontmatter.short_description}
+              complete_description={item.compiledContent()}
+              tags={item.frontmatter.tags}
+              url_img={item.frontmatter.url_img}
+              prefix={item.frontmatter.prefix}
+              demo={item.frontmatter.demo}
+            />
+            </div>
+          );
+        })
+      }
       </div>
-    </div>
   </AccordionLayout>
 
   <StaticLayout title={"Contact"} icon={"carbon:location-person"}>
