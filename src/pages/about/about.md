@@ -4,7 +4,9 @@ name: "Luis Hernandez"
 designation: "Computer Engineer"
 location: Zapopan, Jalisco. Mexico
 pronouns: "he/him/el"
-website: "http://tafutza.hn/kos"
+website: "https://cvluishernandez-luis-projects-1f0a1c9c.vercel.app/"
 ---
+Hello, welcome to my digital resume!
+I'm Luis Angel, a dynamic developer driven by a passion for innovation and simplifying tasks through applications, websites, and video games. I thrive in collaborative environments, where I can both contribute my experience and eagerly learn from others. I'm enthusiastic about opportunities to apply my skills, explore new solutions, and drive innovation. <a style="color:#41A6DF;" href="https://wa.me/523319796024" target="_blank">Let's connect and create something remarkable together!</a>
 
-As a developer, I thrive on crafting innovative applications, websites, and video games that not only entertain but also enrich users' experiences. My enthusiasm extends beyond coding; I relish collaborative environments where I can both contribute my expertise and learn from others. I am driven by a perpetual hunger for knowledge, constantly seeking to broaden my skill set and tackle real-world challenges. Whether it's creating solutions to everyday problems or diving into the latest technologies, I am committed to leveraging my programming skills to make a positive impact.
+
