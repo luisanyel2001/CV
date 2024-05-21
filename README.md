@@ -27,7 +27,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## Demo
 
-[CV](https://cvluishernandez-gfog65hr8-luis-projects-1f0a1c9c.vercel.app/)
+[CV](https://cvluishernandez-luis-projects-1f0a1c9c.vercel.app/)
 
 
 ## Acknowledgments
