@@ -1,36 +1,44 @@
 ---
-import { Icon } from "astro-icon/components";
-import AccordionLayout from "../layouts/AccordionLayout.astro";
-import StaticLayout from "../layouts/StaticLayout.astro";
-import * as about from "../pages/about/about.md";
-import Card from "./Card.astro";
-import ContactCard from "./ContactCard.astro";
-import ModalCard from "./ModalCard.astro";
-import CertificationCard from "./CertificationCard.astro";
-const works = await Astro.glob("../pages/works/*.md");
-const projects = await Astro.glob("../pages/projects/*.md");
-const studies = await Astro.glob("../pages/studies/*.md");
-const certificates = await Astro.glob("../pages/certificates/*.md");
-const contact = await Astro.glob("../pages/contact/*.md");
-const PDF = "/CV_2024_English.pdf";
+const {language} = Astro.props
 
+import { Icon } from "astro-icon/components";
+import AccordionLayout from "../../layouts/AccordionLayout.astro";
+import StaticLayout from "../../layouts/StaticLayout.astro";
+import Card from "../Card.astro";
+import ContactCard from "../ContactCard.astro";
+import ModalCard from "../ModalCard.astro";
+import CertificationCard from "../CertificationCard.astro";
+
+const titles = await import(`../../content/${language}/titles.md`);
+let about,works,projects,studies,certificates,contact,PDF;
+switch (language) {
+      case "en": 
+        about = await import("../../content/en/about/about.md");
+        works = await Astro.glob("../../content/en/works/*.md"); 
+        projects = await Astro.glob("../../content/en/projects/*.md"); 
+        studies = await Astro.glob("../../content/en/studies/*.md"); 
+        certificates = await Astro.glob("../../content/en/certificates/*.md"); 
+        contact = await Astro.glob("../../content/en/contact/*.md"); 
+        PDF = "/CV_2024_English.pdf"; 
+        break;
+
+      case "es": 
+        about = await import("../../content/es/about/about.md");
+        works = await Astro.glob("../../content/es/works/*.md");
+        projects = await Astro.glob("../../content/es/projects/*.md"); 
+        studies = await Astro.glob("../../content/es/studies/*.md"); 
+        certificates = await Astro.glob("../../content/es/certificates/*.md"); 
+        contact = await Astro.glob("../../content/es/contact/*.md"); 
+        PDF = "/CV_2024_English.pdf"; 
+        break;
+    }
 ---
 
+
+
 <div class="join join-vertical gap-1">
-
-
-  <!-- 
-  <StaticLayout title={"About"} icon={"carbon:identification"}>
-    <article class="text-justify">
-      <Fragment set:html={about.compiledContent()} />
-    </article>
-  </StaticLayout>
-
-  <CertificationCard></CertificationCard>
-  -->
   
-
-  <AccordionLayout title={"About"} icon={"carbon:identification"}>
+  <AccordionLayout title={titles.frontmatter.about} icon={"carbon:identification"}>
     <article class="text-justify">
       <Fragment set:html={about.compiledContent()} />
     </article>
@@ -38,7 +46,7 @@ const PDF = "/CV_2024_English.pdf";
   
   
 
-  <AccordionLayout title={"Work"} icon={"carbon:construction"}>
+  <AccordionLayout title={titles.frontmatter.work} icon={"carbon:construction"}>
     {
       works.map((item) => {
         return (
@@ -55,8 +63,8 @@ const PDF = "/CV_2024_English.pdf";
       })
     }
   </AccordionLayout>
-
-  <AccordionLayout title={"Studies"} icon={"carbon:education"}>
+ 
+  <AccordionLayout title={titles.frontmatter.studie} icon={"carbon:education"}>
     {
       studies.map((item) => {
         return (
@@ -73,7 +81,7 @@ const PDF = "/CV_2024_English.pdf";
     }
   </AccordionLayout>
 
-  <AccordionLayout title={"Projects"} icon={"carbon:tools"}>
+  <AccordionLayout title={titles.frontmatter.project} icon={"carbon:tools"}>
     <div class="grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center">
     {
       projects.map((item) => {
@@ -99,7 +107,7 @@ const PDF = "/CV_2024_English.pdf";
     </div>
   </AccordionLayout>
 
-  <AccordionLayout title={"Certifications"} icon={"carbon:certificate"}>
+  <AccordionLayout title={titles.frontmatter.certification} icon={"carbon:certificate"}>
     <div class="grid sm:grid-cols-1 lg:grid-cols-2 justify-items-center">
       {
         certificates.map((item) => {
@@ -121,7 +129,7 @@ const PDF = "/CV_2024_English.pdf";
       </div>
   </AccordionLayout>
 
-  <StaticLayout title={"Contact"} icon={"carbon:location-person"}>
+  <StaticLayout title={titles.frontmatter.contact} icon={"carbon:location-person"}>
     <div id="contact" class="flex flex-wrap content-around gap-4 justify-center">
       {
         contact.map((item) => {
@@ -137,5 +145,4 @@ const PDF = "/CV_2024_English.pdf";
     
     </div>
   </StaticLayout>
-
 </div>

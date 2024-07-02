@@ -3,7 +3,7 @@ title: about
 name: "Luis Hernandez"
 designation: "Computer Engineer"
 location: Zapopan, Jalisco. Mexico
-pronouns: "he/him/el"
+pronouns: "he/him"
 website: "https://cvluishernandez-luis-projects-1f0a1c9c.vercel.app/"
 ---
 Hello, welcome to my digital resume!

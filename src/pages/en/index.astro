@@ -1,41 +1,34 @@
 ---
 import "@fontsource-variable/dm-sans";
-import Container from "../components/common/Container.astro";
-import Footer from "../components/common/Footer.astro";
-import Header from "../components/common/Header.astro";
+import Container from "../../components/common/Container.astro";
+import Footer from "../../components/common/Footer.astro";
+import Header from "../../components/common/Header.astro";
 import { Icon } from "astro-icon/components";
 
-const defaultLanguage = "en";
-const url = new URL(import.meta.env.SITE + Astro.request.url);
-let language = url.searchParams.get('lang') || defaultLanguage;
-
+const language = "en";
 const languages = [
   { value: 'en', name: 'English' },
-  { value: 'es', name: 'Español' }
+  { value: 'es', name: 'Spanish' }
 ];
-const isValidLanguage = languages.some(lang => lang.value === language);
-if (!isValidLanguage) {
-  language = defaultLanguage;
-}
 ---
 
 
+<!--To update https://digital-expanse.com/tutorials/astro-blog-filters/ -->
 <html lang={language}>
   <head>
     <script is:inline>
       /*Theme init*/
       localStorage.setItem("theme", "corporate");
 
-      function getSelectedValue() {
+        function getSelectedValue() {
         // Obtén el elemento <select> por su id
         var selectElement = document.getElementById("mySelect");
 
         // Obtén el valor seleccionado
         var selectedValue = selectElement.value;
 
-       //Update language
-        window.location.href = '?lang='+selectedValue;
-        
+        // Muestra el valor seleccionado en un elemento <p> con id "output"
+        window.location.href = '/'+selectedValue;
       }
     </script>
 
@@ -81,8 +74,6 @@ if (!isValidLanguage) {
 
     <div class="flex items-center absolute top-4 left-4 md:top-6 md:left-6 lg:top-8 lg:left-8 xl:top-10 xl:left-10 z-10">
       <select id="mySelect" class="select select-bordered w-fit max-w-xs" onchange="getSelectedValue()">
-        
-
         {languages.map((lang) => (
           <option value={lang.value} selected={lang.value === language}>{lang.name}</option>
         ))}

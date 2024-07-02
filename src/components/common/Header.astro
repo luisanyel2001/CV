@@ -1,6 +1,8 @@
 ---
+const {language} = Astro.props
+
 import { Icon } from "astro-icon/components";
-import * as about from "../pages/about/about.md";
+const about = await import(`../../content/${language}/about/about.md`);
 ---
 
 <header class="mx-auto pt-6 pb-2 relative">
