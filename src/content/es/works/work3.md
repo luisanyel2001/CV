@@ -1,17 +1,17 @@
 ---
-title: Social Service – Archive Assistant 
+title: Social Service – Auxiliar de archivo
 date: 07/2019 - 12/2019
 url: http://politecnicamatute.sems.udg.mx/
 location: Zapopan, Jalisco
 org: Escuela Politécnica Ing. Jorge Matute Remus
 tags:
   [
-    "Customer Support",
-    "Web Application",
-    "Inventory",
+    "Atención al cliente",
+    "Desarrollo web",
+    "Inventario",
   ]
 ---
 
-- Provided customer support and guidance to internal and external users, offering filing procedure guidance, and ensuring high-quality service.
-- Developed a customized web application to enhance document control, streamline the query process, and facilitate efficient archive management.
-- Managed the sale of t-shirts and inventory, ensuring accurate record-keeping and effective transaction management.
+- Proporcioné atención al cliente y asesoramiento a usuarios internos y externos, resolviendo consultas, brindando orientación sobre procedimientos de archivo y asegurando un servicio de alta calidad.
+- Desarrollé una aplicación web personalizada para mejorar el control de documentos, agilizar el proceso de consulta y facilitar la gestión eficiente del archivo.
+- Administre la venta de playeras y su inventario, asegurando un registro preciso y una gestión efectiva de las transacciones.

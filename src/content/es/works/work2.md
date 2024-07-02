@@ -1,20 +1,20 @@
 ---
-title: Internship – Web Developer 
+title: Internship – Desarrollador web
 date: 01/2020 - 06/2020
 url: http://politecnicamatute.sems.udg.mx/
 location: Zapopan, Jalisco
 org: Escuela Politécnica Ing. Jorge Matute Remus
 tags:
   [
-    "Development",
+    "Desarrollo",
     "Flask",
-    "Databases",
+    "Bases de datos",
     "Front-end",
     "Back-end",
-    "Lead"
+    "Liderazgo"
   ]
 ---
 
-- Spearheaded the development of a web platform to streamline student-company connections for professional internships, significantly enhancing access to job opportunities.
-- Utilized Flask, a Python framework, for back-end programming implementation, employing agile methodologies to ensure optimal performance and seamless user experience.
-- Designed the front-end user interface with a user-centric approach, employing HTML, CSS, and JavaScript to create visually appealing and user-friendly experiences.
+- Lideré el desarrollo de una plataforma web para facilitar la vinculación de estudiantes con empresas para la realización de prácticas profesionales, mejorando significativamente el acceso a oportunidades laborales.
+- Implementé la programación back-end utilizando Flask, un framework de Python, implementando metodologías ágiles, asegurando un rendimiento óptimo y una experiencia de usuario fluida.
+- Diseñé la interfaz de usuario front-end con un enfoque centrado en el usuario, utilizando HTML, CSS y JavaScript para crear una experiencia visualmente atractiva y fácil de usar.

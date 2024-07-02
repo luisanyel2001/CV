@@ -10,7 +10,7 @@ import ModalCard from "../ModalCard.astro";
 import CertificationCard from "../CertificationCard.astro";
 
 const titles = await import(`../../content/${language}/titles.md`);
-let about,works,projects,studies,certificates,contact,PDF;
+let about,works,projects,studies,certificates,contact;
 switch (language) {
       case "en": 
         about = await import("../../content/en/about/about.md");
@@ -19,7 +19,6 @@ switch (language) {
         studies = await Astro.glob("../../content/en/studies/*.md"); 
         certificates = await Astro.glob("../../content/en/certificates/*.md"); 
         contact = await Astro.glob("../../content/en/contact/*.md"); 
-        PDF = "/CV_2024_English.pdf"; 
         break;
 
       case "es": 
@@ -29,7 +28,6 @@ switch (language) {
         studies = await Astro.glob("../../content/es/studies/*.md"); 
         certificates = await Astro.glob("../../content/es/certificates/*.md"); 
         contact = await Astro.glob("../../content/es/contact/*.md"); 
-        PDF = "/CV_2024_English.pdf"; 
         break;
     }
 ---

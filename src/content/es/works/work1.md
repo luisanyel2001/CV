@@ -7,7 +7,7 @@ org: Feria Internacional del Libro de Guadalajara (FIL)
 tags: ["Automatización", "Mantenimiento", "Redes", "Logistica"]
 ---
 
-- Developed and implemented software programs for task automation, resulting in a significant improvement in team operational efficiency.
-- Conducted preventive and corrective maintenance on computer equipment, ensuring optimal functionality.
-- Configured and managed the network infrastructure for the Fair.
-- Assisted in the IT logistics for events at the International Book Fair, ensuring availability and functionality of computer systems throughout the event.
+- Desarrollé e implementé programas de software para la automatización de tareas, lo que resultó en una mejora significativa en la eficiencia operativa del equipo.
+- Realicé mantenimiento preventivo y correctivo al equipo de cómputo, asegurando su funcionamiento óptimo.
+- Configuración y administración de la red de la Feria.
+- Auxilie en la logística de tecnologías de la información para eventos de la Feria Internacional del Libro, asegurando la disponibilidad y funcionalidad de los sistemas informáticos durante todo el evento.

@@ -133,13 +133,6 @@ declare module 'astro:content' {
   collection: "en";
   data: any
 } & { render(): Render[".md"] };
-"blogs/home-mmouzo.md": {
-	id: "blogs/home-mmouzo.md";
-  slug: "blogs/home-mmouzo";
-  body: string;
-  collection: "en";
-  data: any
-} & { render(): Render[".md"] };
 "certificates/1samsung.md": {
 	id: "certificates/1samsung.md";
   slug: "certificates/1samsung";
@@ -327,13 +320,6 @@ declare module 'astro:content' {
 "about/about.md": {
 	id: "about/about.md";
   slug: "about/about";
-  body: string;
-  collection: "es";
-  data: any
-} & { render(): Render[".md"] };
-"blogs/home-mmouzo.md": {
-	id: "blogs/home-mmouzo.md";
-  slug: "blogs/home-mmouzo";
   body: string;
   collection: "es";
   data: any
