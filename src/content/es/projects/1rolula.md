@@ -2,7 +2,7 @@
 title: Detector de agua para tinaco
 url_img: /projects/rolula_logo.png
 tags: ["Samsung","IoT", "ESP8266", "Data", "Wireless","Solar", "Baterry"]
-short_description: Provide household inhabitants with real-time information on the level of their water tank.
+short_description: Proporcionar a los habitantes de los hogares información en tiempo real sobre el nivel de su tanque de agua.
 prefix: rolula
 demo: https://www.udg.mx/es/noticia/estudiantes-de-udeg-se-graduan-del-samsung-innovation-campus-2023?fbclid=IwZXh0bgNhZW0CMTAAAR3jB5QCtje1uFNtL7-fm0rCqpBgYygv1em2b3qFFyN_Gw9K5SRl6ranMWU_aem_AaCwcVwzlqxqQ5rkfNawh_uzB3xdjYtO2HEs4Ut7n1at0NGx-_2EtZqZFMNg_q-yvyP0dk65oyco_iI-bI92Z6wG
 img_1: /projects/rolula_1.png
