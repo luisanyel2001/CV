@@ -1,7 +1,7 @@
 ---
 title: Maze Video Game 
 url_img: /projects/uetc_logo.png
-tags: ["UETC","Unreal Engine", "C++", "IA", "Desgin","Development"]
+tags: ["UETC","Unreal Engine", "C++", "IA", "Design","Development"]
 short_description: Attractive and challenging maze video game that offers an immersive experience to players.
 prefix: uetc
 demo: https://uetc.mx/

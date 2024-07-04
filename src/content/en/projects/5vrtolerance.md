@@ -2,7 +2,7 @@
 title: VR ambiguity tolerance research
 url_img: /projects/rtc_logo.png
 tags: ["godot", "C#", "GDScript", "RCP","Blender", "IA"]
-short_description: Plugin to be able developer real time collaboration in Godot
+short_description: VR experience for measuring tolerance to ambiguity
 prefix: rtc
 demo: https://youtube.com/shorts/s3hn7dmWVS0
 img_1: /projects/rtc_1.png

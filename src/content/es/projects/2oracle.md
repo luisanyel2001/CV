@@ -1,8 +1,8 @@
 ---
-title: APEX application for visit organization
+title: Aplicación APEX para organización de visitas
 url_img: /projects/oracle_logo.png
-tags: ["Low code","Database", "Organization", "SQL"]
-short_description: Application to organize visits to the MDC made in APEX.
+tags: ["Low code","Bases de datos", "Organización", "SQL"]
+short_description: Aplicación para organizar visitas al MDC creada en APEX.
 prefix: oracle
 demo: https://geeb0b397adad22-curso.adb.mx-queretaro-1.oraclecloudapps.com/ords/r/apex/workspace-sign-in/oracle-apex-sign-in
 img_1: /projects/oracle_1.png
@@ -10,6 +10,6 @@ img_2: /projects/oracle_2.png
 img_3: /projects/oracle_3.png
 img_4: /projects/oracle_4.png
 ---
-- The primary goal is to streamline and optimize the scheduling and management of visits to the MDC 
-- The project leverages Oracle APEX, a powerful and flexible web application development tool.
-- A comprehensive dashboard for administrators and coordinators to monitor upcoming visits, cancellations, and visitor statistics.
+- El objetivo principal es agilizar y optimizar la programación y gestión de visitas al MDC.
+- El proyecto utiliza Oracle APEX, una potente y flexible herramienta de desarrollo de aplicaciones web.
+- Se implementará un panel de control integral para que los administradores y coordinadores puedan supervisar las visitas próximas, las cancelaciones y las estadísticas de los visitantes.

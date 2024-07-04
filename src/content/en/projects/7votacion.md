@@ -1,7 +1,7 @@
 ---
 title: Votacion
 url_img: /projects/cuceiv_logo.png
-tags: ["Samsung","IoT", "ESP8266", "Data", "Wireless","Solar", "Baterry"]
+tags: ["React Native","API", "Design", "Database"]
 short_description: Mobile application that enables users to vote on agreements, proposals, or decisions efficiently and securely.
 prefix: cuceiv
 demo: 

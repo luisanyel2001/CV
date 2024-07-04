@@ -1,7 +1,7 @@
 ---
 title: Website for Facilitating CFE Single-Line Diagram Search
 url_img: /projects/cfe_logo.png
-tags: ["Samsung","IoT", "ESP8266", "Data", "Wireless","Solar", "Baterry"]
+tags: ["Flask","Database", "JavaScript", "PDF"]
 short_description: Identifying circuits in single-line diagrams (unifilar diagrams) in PDF format and marking them with circles
 prefix: cfe
 demo: 

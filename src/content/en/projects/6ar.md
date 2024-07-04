@@ -1,7 +1,7 @@
 ---
 title: Point of Sale System for Enhanced Restaurant Management
 url_img: /projects/ar_logo.jpg
-tags: ["Samsung","IoT", "ESP8266", "Data", "Wireless","Solar", "Baterry"]
+tags: ["Flask","JavaScript", "Database", "Bootstrap", "Python","Ajax"]
 short_description: Modern, efficient, and user-friendly Point of Sale (POS) system that streamlines sales transactions and inventory management.
 prefix: ar
 demo: 

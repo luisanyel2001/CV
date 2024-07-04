@@ -1,8 +1,8 @@
 ---
-title: Point of Sale System for Enhanced Restaurant Management
+title: Punto de venta para restaurante
 url_img: /projects/ar_logo.jpg
-tags: ["Samsung","IoT", "ESP8266", "Data", "Wireless","Solar", "Baterry"]
-short_description: Modern, efficient, and user-friendly Point of Sale (POS) system that streamlines sales transactions and inventory management.
+tags: ["Flask","JavaScript", "Bases de datos", "Bootstrap", "Python","Ajax"]
+short_description: Sistema de Punto de Venta (POS) moderno, eficiente y fácil de usar que agiliza las transacciones de ventas y la gestión de inventario.
 prefix: ar
 demo: 
 img_1: /projects/ar_1.png
@@ -10,7 +10,7 @@ img_2: /projects/ar_2.png
 img_3: /projects/ar_3.png
 img_4: /projects/ar_5.png
 ---
-- The project uses Flask, a lightweight and flexible web framework for Python, for the backend.
-- AJAX (Asynchronous JavaScript and XML) is utilized for asynchronous data updates to provide a smooth and responsive user experience.
-- A clean and intuitive web-based interface accessible via web browsers on various devices (desktops, tablets, mobile phones).
-- Real-time inventory tracking and management, automatically updating stock levels as sales are processed.
+- El proyecto utiliza Flask, un marco de trabajo web ligero y flexible para Python, para el backend.
+- Se utiliza AJAX (JavaScript y XML asincrónico) para actualizaciones de datos asíncronas y proporcionar una experiencia de usuario fluida y receptiva.
+- Una interfaz web limpia e intuitiva accesible a través de navegadores web en diversos dispositivos (computadoras de escritorio, tabletas, teléfonos móviles).
+- Seguimiento y gestión de inventario en tiempo real, actualizando automáticamente los niveles de stock a medida que se realizan ventas.
