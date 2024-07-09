@@ -1,6 +1,6 @@
 ---
 title: Introduction to Cloud Computing
-url_img: /certifications/ibmcloud.pdf
+url_img: /certifications/ibmcloud.png
 tags: ["IoT", "Cloud", "Secure", "Storage","DevOps", "Application"]
 short_description: Introduction to Cloud Computing
 prefix: ibmcloud
